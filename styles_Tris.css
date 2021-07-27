@@ -1,0 +1,324 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+
+}
+.nav__bar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+
+.nav__bar:hover{
+    color: #B96849;
+}
+
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+}
+nav{
+	flex: 1;
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #814538;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+h1{
+	color: #B96849;
+	font-size: 60px;
+	font-family: 'DM Serif Display', Serif;
+	font-style: italic;
+}
+h2{
+	color: #B96849;
+	font-size: 20px;
+	font-family: 'Poppins', Serif;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+p{
+	color: #814538;
+	font-size: 11px;
+	line-height: 15px;
+	padding-right: 12px;
+}
+
+button{
+	width: 180px;
+	color: #814538;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/about.jpeg);
+	background-position: center;
+	background-size: cover;
+	transition: 0.5s;
+
+}
+.card1{
+	background-image: url(images/about.jpeg);
+	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/about.jpeg);
+}
+.card2{
+	background-image: url(images/resume.jpeg);
+	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/resume.jpeg);
+}
+.card3{
+	background-image: url(images/contact.jpeg);
+	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/contact.jpeg);
+}
+.card4{
+	background-image: url(images/misc.jpg);
+	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/misc.jpg);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 8px;
+}
+
+/*==================== ABOUT ====================*/
+.about__img{
+    width: 120px;
+    border-radius: 0.5em;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__description{
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+}
+
+.about__info-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #B96849;
+}
+
+.about__info-name{
+    font-size: 12px;
+}
+
+.about__info-title{
+	display: block;
+    text-align: center;
+    color: #B96849;
+}
+
+.about__info-name{
+    display: block;
+    text-align: center;
+    color: #814538;
+}
+
+
+/*==================== RESUME ====================*/
+.resume__container{
+	row-gap: 3em;
+    padding: 2em;
+    height: 200px;
+    width: 70%;
+}
+
+.resume__description{
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.resume__data{
+	display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+}
+
+
+.button{
+	margin-left: 1em;
+	width: 10px;
+	color: #814538;
+	font-size: 10px;
+	padding: 7px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 10px;
+	outline: none;
+	margin-top: 30px;
+}
+
+
+.button__resume:hover {
+  color: #CB7E6B;
+}
+
+/*==================== CONTACT ME ====================*/
+.contact__container{
+    row-gap: 3em;
+    padding: 2em;
+    height: 200px;
+    width: 70%;
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+h3{
+	color: #B96849;
+}
+
+.section{
+    height: 100px;
+    width: 100%;
+    padding: 100px 0px 0px 0px
+}
+
+.section__subtitle{
+    display: block;
+    margin-bottom: 2em;
+}
+
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+
+.section__subtitle{
+	color: #814538;
+	font-style: italic;
+	font-size: 13px;
+	font-family: 'DM Serif Display', Serif;
+	margin-bottom: 2em;
+	gap: 2em;
+}
+
+.contact__icon{
+    font-size: 20px;
+    color: #814538;
+    margin-right: 0.75em;
+}
+
+.contact__title{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact__subtitle{
+    font-size: 13px;
+    color: #B96849;
+}
+
+.contact__content{
+    border-radius: 0.5em;
+    padding: 0.75em 1em 0.25em;
+}
+
+.contact__label{
+    font-size: 11px;
+    color: #B96849;
+}
+
+.contact__input{
+    width: 100%;
+    background-color: #fff;
+    color: #814538;
+    font-family: Poppins;
+    font-size: 11px;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0,5rem 0;
+    border-radius: 3px;
+}
+
+.button{
+	margin-left: 1em;
+	width: 10px;
+	color: #814538;
+	font-size: 10px;
+	padding: 7px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 10px;
+	outline: none;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
