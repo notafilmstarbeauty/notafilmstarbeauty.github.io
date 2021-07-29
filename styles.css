@@ -5,11 +5,13 @@
 }
 .container{
 	width: 100%;
-	height: 100vh;
 	padding-left: 8%;
 	padding-right: 8%;
 	box-sizing: border-box;
-
+}
+.grid{
+    display: grid;
+    gap: 1.5em;
 }
 .nav__bar{
 	height: 12%;
@@ -21,9 +23,10 @@
     color: #B96849;
 }
 
-.menu-icon{
+.menu{
 	width: 30px;
 	cursor: pointer;
+	display: none;
 }
 nav{
 	flex: 1;
@@ -107,12 +110,17 @@ button{
 	box-sizing: border-box;
 	cursor: pointer;
 	margin: 10px 15px;
-	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/about.jpeg);
 	background-position: center;
 	background-size: cover;
 	transition: 0.5s;
-
 }
+
+.card__text{
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: 0 0 5px #999;
+}
+
 .card1{
 	background-image: url(images/about.jpeg);
 	background-image: linear-gradient(rgba(249,243,232,0.4),rgba(249,243,232,0.4)),url(images/about.jpeg);
@@ -133,10 +141,7 @@ button{
 .card:hover{
 	transform: translateY(-10px);
 }
-h5{
-	color: #fff;
-	text-shadow: 0 0 5px #999;
-}
+
 .card p{
 	text-shadow: 0 0 15px #000;
 	font-size: 8px;
@@ -222,27 +227,14 @@ h5{
   color: #CB7E6B;
 }
 
-/*==================== CONTACT ME ====================*/
-.contact__container{
-    row-gap: 3em;
-    padding: 2em;
-    height: 200px;
-    width: 70%;
-}
-
-.contact__information{
-    display: flex;
-    margin-bottom: 2em;
-}
 
 h3{
 	color: #B96849;
 }
 
 .section{
-    height: 100px;
     width: 100%;
-    padding: 100px 0px 0px 0px
+    padding: 100px 0px 0px 0px;
 }
 
 .section__subtitle{
@@ -264,6 +256,17 @@ h3{
 	gap: 2em;
 }
 
+/*==================== CONTACT ME ====================*/
+.contact__container{
+    row-gap: 3em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: 2em;
+}
+
 .contact__icon{
     font-size: 20px;
     color: #814538;
@@ -281,13 +284,22 @@ h3{
 }
 
 .contact__content{
+	background-color: #fff;
     border-radius: 0.5em;
-    padding: 0.75em 1em 0.25em;
+    padding: 0.7em 1em 0.25em;
 }
 
 .contact__label{
     font-size: 11px;
     color: #B96849;
+}
+
+.contact__form{
+    width: 460px;
+}
+
+.contact__inputs{
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .contact__input{
@@ -298,9 +310,9 @@ h3{
     font-size: 11px;
     border: none;
     outline: none;
-    padding: 0.25rem 0.5rem 0,5rem 0;
-    border-radius: 3px;
+    padding: 0.25rem 0.5rem 0.5rem 0;
 }
+
 
 .button{
 	margin-left: 1em;
@@ -315,9 +327,14 @@ h3{
 	margin-top: 30px;
 }
 
-
-
-
+/* Media Queries */
+@media(max-width: 896px){
+.menu{
+	width: 30px;
+	cursor: pointer;
+	display: block;
+}
+}
 
 
 
